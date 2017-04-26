@@ -15,10 +15,10 @@ ws.on('connection', function(socket) {
     });
     socket.on('message', function(data) {
         console.log('message received: ' + data);
-        messages.push(data)
+        messages.push(data);
         //ws has the details all the connections
         ws.clients.forEach(function(clientSocket) {
-            clientSocket.send(data)
+            clientSocket.send(data);
         });
     });
 });
