@@ -22,7 +22,7 @@ class ChatApp {
     constructor() {
         this.chatForm = new ChatForm(FORM_SELECTOR, INPUT_SELECTOR);
         this.chatList = new ChatList(LIST_SELECTOR, username);
-        console.log('Hello ES6')
+        console.log('Hello ES6');
         socket.init('ws://localhost:3003');
         socket.registerOpenHandler(() => {
             this.chatForm.init((data) => {

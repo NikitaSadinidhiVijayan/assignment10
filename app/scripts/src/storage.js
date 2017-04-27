@@ -10,8 +10,8 @@ class Store {
     }
 }
 export class UserStore extends Store {
-constructor(key) {
-super(sessionStorage);
-this.key = key;
+    constructor(key) {
+        super(sessionStorage);
+        this.key = key;
+    }
 }
-} 
